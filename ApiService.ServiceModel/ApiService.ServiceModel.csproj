@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="ServiceStack.Core" Version="5.0.2" />
+    <PackageReference Include="Nethereum.Web3" Version="2.2.3" />
+    <PackageReference Include="Nethereum.RPC" Version="2.2.3" />
+  </ItemGroup>
+</Project>

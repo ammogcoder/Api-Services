@@ -1,0 +1,236 @@
+{
+  "contractName": "NotificationI",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_subject",
+          "type": "uint8"
+        },
+        {
+          "name": "_message",
+          "type": "bytes32"
+        },
+        {
+          "name": "_scheduledDateTime",
+          "type": "uint256"
+        }
+      ],
+      "name": "ping",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/**\n * @description Notification Interface\n * @copyright (c) 2017 Honest Insurance\n * @author Martin Stellnberger\n * @license GPL-3.0\n */\n\npragma solidity ^0.4.18;\n\n\n/** @title Insurance Pool's Notification Interface */\ninterface NotificationI {\n    function ping(uint8 _subject, bytes32 _message, uint _scheduledDateTime) public returns (uint);\n}",
+  "sourcePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/NotificationI.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/NotificationI.sol",
+      "exportedSymbols": {
+        "NotificationI": [
+          3272
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 3260,
+        "name": "PragmaDirective",
+        "src": "139:24:9"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": "@title Insurance Pool's Notification Interface ",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            3272
+          ],
+          "name": "NotificationI",
+          "scope": 3273
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "ping",
+              "payable": false,
+              "scope": 3272,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_subject",
+                      "scope": 3271,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 3261,
+                        "name": "ElementaryTypeName",
+                        "src": "264:5:9"
+                      }
+                    ],
+                    "id": 3262,
+                    "name": "VariableDeclaration",
+                    "src": "264:14:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_message",
+                      "scope": 3271,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3263,
+                        "name": "ElementaryTypeName",
+                        "src": "280:7:9"
+                      }
+                    ],
+                    "id": 3264,
+                    "name": "VariableDeclaration",
+                    "src": "280:16:9"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_scheduledDateTime",
+                      "scope": 3271,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 3265,
+                        "name": "ElementaryTypeName",
+                        "src": "298:4:9"
+                      }
+                    ],
+                    "id": 3266,
+                    "name": "VariableDeclaration",
+                    "src": "298:23:9"
+                  }
+                ],
+                "id": 3267,
+                "name": "ParameterList",
+                "src": "263:59:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 3271,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 3268,
+                        "name": "ElementaryTypeName",
+                        "src": "339:4:9"
+                      }
+                    ],
+                    "id": 3269,
+                    "name": "VariableDeclaration",
+                    "src": "339:4:9"
+                  }
+                ],
+                "id": 3270,
+                "name": "ParameterList",
+                "src": "338:6:9"
+              }
+            ],
+            "id": 3271,
+            "name": "FunctionDefinition",
+            "src": "250:95:9"
+          }
+        ],
+        "id": 3272,
+        "name": "ContractDefinition",
+        "src": "220:127:9"
+      }
+    ],
+    "id": 3273,
+    "name": "SourceUnit",
+    "src": "139:208:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-30T23:40:31.900Z"
+}

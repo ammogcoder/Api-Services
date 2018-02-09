@@ -1,0 +1,529 @@
+{
+  "contractName": "HashMapITest",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addHash",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hashMap",
+      "outputs": [
+        {
+          "name": "firstIdx",
+          "type": "uint256"
+        },
+        {
+          "name": "nextIdx",
+          "type": "uint256"
+        },
+        {
+          "name": "count",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isActive",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isValid",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_idx",
+          "type": "uint256"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "archiveHash",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isArchived",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052606060405190810160409081526001808352602083015260009082018190528151816003015560208201518160040155604082015181600501555050341561004b57600080fd5b6103e88061005a6000396000f3006060604052600436106100695763ffffffff60e060020a60003504166343e08ad1811461006e578063584b6410146100865780635c36901c146100bd5780636a938567146100e75780639507d39a146100fd578063b3ac319d14610125578063b6b942e81461013b575b600080fd5b341561007957600080fd5b610084600435610151565b005b341561009157600080fd5b6100996101be565b60405180848152602001838152602001828152602001935050505060405180910390f35b34156100c857600080fd5b6100d36004356101ca565b604051901515815260200160405180910390f35b34156100f257600080fd5b6100d3600435610249565b341561010857600080fd5b6101136004356102a8565b60405190815260200160405180910390f35b341561013057600080fd5b610084600435610307565b341561014657600080fd5b6100d360043561035d565b73__Lib___________________________________63ec72608960008360405160e060020a63ffffffff85160281526004810192909252602482015260440160006040518083038186803b15156101a757600080fd5b6102c65a03f415156101b857600080fd5b50505050565b60035460045460055483565b600073__Lib___________________________________63199ef7be8284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd5b6102c65a03f4151561023a57600080fd5b50505060405180519392505050565b600073__Lib___________________________________63ecb484258284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd5b600073__Lib___________________________________63085db8ab8284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd5b73__Lib___________________________________63fa8ae1cb60008360405160e060020a63ffffffff85160281526004810192909252602482015260440160006040518083038186803b15156101a757600080fd5b600073__Lib___________________________________63426149368284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd00a165627a7a723058205fbae82a412c7b1badb0e4607aeb9446977e9076d07b8e5a27b6100b8ae6cefa0029",
+  "deployedBytecode": "0x6060604052600436106100695763ffffffff60e060020a60003504166343e08ad1811461006e578063584b6410146100865780635c36901c146100bd5780636a938567146100e75780639507d39a146100fd578063b3ac319d14610125578063b6b942e81461013b575b600080fd5b341561007957600080fd5b610084600435610151565b005b341561009157600080fd5b6100996101be565b60405180848152602001838152602001828152602001935050505060405180910390f35b34156100c857600080fd5b6100d36004356101ca565b604051901515815260200160405180910390f35b34156100f257600080fd5b6100d3600435610249565b341561010857600080fd5b6101136004356102a8565b60405190815260200160405180910390f35b341561013057600080fd5b610084600435610307565b341561014657600080fd5b6100d360043561035d565b73__Lib___________________________________63ec72608960008360405160e060020a63ffffffff85160281526004810192909252602482015260440160006040518083038186803b15156101a757600080fd5b6102c65a03f415156101b857600080fd5b50505050565b60035460045460055483565b600073__Lib___________________________________63199ef7be8284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd5b6102c65a03f4151561023a57600080fd5b50505060405180519392505050565b600073__Lib___________________________________63ecb484258284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd5b600073__Lib___________________________________63085db8ab8284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd5b73__Lib___________________________________63fa8ae1cb60008360405160e060020a63ffffffff85160281526004810192909252602482015260440160006040518083038186803b15156101a757600080fd5b600073__Lib___________________________________63426149368284816040516020015260405160e060020a63ffffffff85160281526004810192909252602482015260440160206040518083038186803b151561022957600080fd00a165627a7a723058205fbae82a412c7b1badb0e4607aeb9446977e9076d07b8e5a27b6100b8ae6cefa0029",
+  "sourceMap": "286:181:5:-;;;442:53:4;;;;;;;;;;470:1;442:53;;;;;;;-1:-1:-1;442:53:4;;;;;;;408:87;;;;;;;;;;;;;;;;;;;;;;;286:181:5;;;;;;;;;;;;;;",
+  "deployedSourceMap": "286:181:5:-;;;;;;;;;-1:-1:-1;;;286:181:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;324:65;;;;;;;;;;;;;;;;408:87:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;695:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1371:109;;;;;;;;;;;;;;1703:93;;;;;;;;;;;;;;;;;;;;;;;;;;;;;392:73:5;;;;;;;;;;;;;;1015:115:4;;;;;;;;;;;;;;324:65:5;367:11;;:7;379:5;367:18;;-1:-1:-1;;;367:18:5;;;;;;;;;;;;;;;;;;;-1:-1:-1;367:18:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;324:65;:::o;408:87:4:-;;;;;;;;:::o;695:102::-;753:4;770:16;;753:4;787:5;753:4;770:23;;;;;;;-1:-1:-1;;;770:23:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;695:102;-1:-1:-1;;;695:102:4:o;1371:109::-;1428:4;1451:15;;1428:4;1467:5;1428:4;1451:22;;;;;;;-1:-1:-1;;;1451:22:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1703:93;1752:7;1772:11;;1752:7;1784:4;1752:7;1772:17;;;;;;;-1:-1:-1;;;1772:17:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;392:73:5;439:15;;:7;455:5;439:22;;-1:-1:-1;;;439:22:5;;;;;;;;;;;;;;;;;;;-1:-1:-1;439:22:5;;;;;;;;;;;;;;;;1015:115:4;1075:4;1098:18;;1075:4;1117:5;1075:4;1098:25;;;;;;;-1:-1:-1;;;1098:25:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "source": "/**\n * @description Hash Map Interface Test contract\n * @copyright (c) 2017 Honest Insurance\n * @author Martin Stellnberger\n * @license GPL-3.0\n */\n\npragma solidity ^0.4.18;\n\nimport \"./HashMapI.sol\";\n\n\n/** @title Contract exists only for the purpose of testing the HashMapI contract */\ncontract HashMapITest is HashMapI {\n\n\tfunction addHash(bytes32 _hash) public {\n\t\thashMap.add(_hash);\n\t}\n\n\tfunction archiveHash(bytes32 _hash) public {\n\t\thashMap.archive(_hash);\n\t}\n}",
+  "sourcePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/HashMapITest.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/HashMapITest.sol",
+      "exportedSymbols": {
+        "HashMapITest": [
+          2539
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 2511,
+        "name": "PragmaDirective",
+        "src": "149:24:5"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 2510,
+          "absolutePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/HashMapI.sol",
+          "file": "./HashMapI.sol",
+          "scope": 2540,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2512,
+        "name": "ImportDirective",
+        "src": "175:24:5"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            2509
+          ],
+          "contractKind": "contract",
+          "documentation": "@title Contract exists only for the purpose of testing the HashMapI contract ",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2539,
+            2509
+          ],
+          "name": "HashMapITest",
+          "scope": 2540
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "HashMapI",
+                  "referencedDeclaration": 2509,
+                  "type": "contract HashMapI"
+                },
+                "id": 2513,
+                "name": "UserDefinedTypeName",
+                "src": "311:8:5"
+              }
+            ],
+            "id": 2514,
+            "name": "InheritanceSpecifier",
+            "src": "311:8:5"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "addHash",
+              "payable": false,
+              "scope": 2539,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_hash",
+                      "scope": 2526,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2515,
+                        "name": "ElementaryTypeName",
+                        "src": "341:7:5"
+                      }
+                    ],
+                    "id": 2516,
+                    "name": "VariableDeclaration",
+                    "src": "341:13:5"
+                  }
+                ],
+                "id": 2517,
+                "name": "ParameterList",
+                "src": "340:15:5"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2518,
+                "name": "ParameterList",
+                "src": "363:0:5"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes32",
+                                  "typeString": "bytes32"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "add",
+                              "referencedDeclaration": 3062,
+                              "type": "function (struct Lib.HashMappping storage pointer,bytes32)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 2456,
+                                  "type": "struct Lib.HashMappping storage ref",
+                                  "value": "hashMap"
+                                },
+                                "id": 2519,
+                                "name": "Identifier",
+                                "src": "367:7:5"
+                              }
+                            ],
+                            "id": 2521,
+                            "name": "MemberAccess",
+                            "src": "367:11:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2516,
+                              "type": "bytes32",
+                              "value": "_hash"
+                            },
+                            "id": 2522,
+                            "name": "Identifier",
+                            "src": "379:5:5"
+                          }
+                        ],
+                        "id": 2523,
+                        "name": "FunctionCall",
+                        "src": "367:18:5"
+                      }
+                    ],
+                    "id": 2524,
+                    "name": "ExpressionStatement",
+                    "src": "367:18:5"
+                  }
+                ],
+                "id": 2525,
+                "name": "Block",
+                "src": "363:26:5"
+              }
+            ],
+            "id": 2526,
+            "name": "FunctionDefinition",
+            "src": "324:65:5"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "archiveHash",
+              "payable": false,
+              "scope": 2539,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_hash",
+                      "scope": 2538,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2527,
+                        "name": "ElementaryTypeName",
+                        "src": "413:7:5"
+                      }
+                    ],
+                    "id": 2528,
+                    "name": "VariableDeclaration",
+                    "src": "413:13:5"
+                  }
+                ],
+                "id": 2529,
+                "name": "ParameterList",
+                "src": "412:15:5"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2530,
+                "name": "ParameterList",
+                "src": "435:0:5"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes32",
+                                  "typeString": "bytes32"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "archive",
+                              "referencedDeclaration": 3134,
+                              "type": "function (struct Lib.HashMappping storage pointer,bytes32)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 2456,
+                                  "type": "struct Lib.HashMappping storage ref",
+                                  "value": "hashMap"
+                                },
+                                "id": 2531,
+                                "name": "Identifier",
+                                "src": "439:7:5"
+                              }
+                            ],
+                            "id": 2533,
+                            "name": "MemberAccess",
+                            "src": "439:15:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2528,
+                              "type": "bytes32",
+                              "value": "_hash"
+                            },
+                            "id": 2534,
+                            "name": "Identifier",
+                            "src": "455:5:5"
+                          }
+                        ],
+                        "id": 2535,
+                        "name": "FunctionCall",
+                        "src": "439:22:5"
+                      }
+                    ],
+                    "id": 2536,
+                    "name": "ExpressionStatement",
+                    "src": "439:22:5"
+                  }
+                ],
+                "id": 2537,
+                "name": "Block",
+                "src": "435:30:5"
+              }
+            ],
+            "id": 2538,
+            "name": "FunctionDefinition",
+            "src": "392:73:5"
+          }
+        ],
+        "id": 2539,
+        "name": "ContractDefinition",
+        "src": "286:181:5"
+      }
+    ],
+    "id": 2540,
+    "name": "SourceUnit",
+    "src": "149:318:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-30T23:40:31.899Z"
+}

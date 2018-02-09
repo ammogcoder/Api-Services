@@ -1,0 +1,1949 @@
+{
+  "contractName": "SetupI",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MIN_BOND_PRINCIPAL_CU",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MIN_YIELD_PPB",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "POOL_NAME",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "DURATION_BOND_LOCK_NEXT_STATE_SEC",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MIN_DURATION_POLICY_PAUSED_DAY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_DURATION_POLICY_PAUSED_DAY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "POOL_DAILY_PROCESSING_OFFSET_SEC",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_DURATION_POLICY_LAPSED_DAY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_YIELD_PPB",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "YAC_INTERVAL_DURATION_SEC",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_DURATION_POLICY_RECONCILIATION_DAYS",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "FUNDING_ACCOUNT_PAYMENT_HASH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_POLICY_CREDIT_CU",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "POOL_OPERATOR_FEE_PPT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "BOND_ACCOUNT_PAYMENT_HASH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "TRUST_FEE_PPT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "PREMIUM_ACCOUNT_PAYMENT_HASH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "TRUST_ACCOUNT_PAYMENT_HASH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "POOL_DAYLIGHT_SAVING_ADJUSTMENT_SEC",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "OPERATOR_ACCOUNT_PAYMENT_HASH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MIN_POLICY_CREDIT_CU",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "WC_POOL_TARGET_TIME_SEC",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "SETTLEMENT_ACCOUNT_PAYMENT_HASH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "BOND_REQUIRED_SECURITY_REFERENCE_PPT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "POLICY_RECONCILIATION_SAFETY_MARGIN",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "YAC_PER_INTERVAL_PPB",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_BOND_PRINCIPAL_CU",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "POOL_TIME_ZONE_OFFSET",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "DURATION_POLICY_POST_LAPSED_DAY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "DURATION_TO_BOND_MATURITY_SEC",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ADJUSTOR_ACCOUNT_PAYMENT_HASH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "DURATION_WC_EXPENSE_HISTORY_DAYS",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "YAC_EXPENSE_THRESHOLD_PPT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6105908061001e6000396000f30060606040526004361061019f5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166283f8bd81146101a4578063079a6f4e146101c95780630c131757146101dc5780630c432f2d1461026657806313f915dc14610279578063284f90b11461028c5780632b76d8e61461029f5780632c1b96c9146102b2578063358327cb146102c55780633ff8ba9f146102d85780634cdedfe2146102eb57806351b87d5f146102fe5780635e1f9f7b146101c95780636775d09b146103115780636da57da1146103245780636e2bdb95146103375780637be4af941461034a57806384ba11ad1461035d5780638e244ef2146102d85780639557cfa01461037057806395e0b293146101a457806399e93aac146103835780639c7b2b9b14610370578063a2e2d5c814610396578063abf290b5146103a9578063ba684e09146103bc578063c99b168c146103cf578063d3046cec146103e2578063d4dcd43714610279578063de3e0c0e14610383578063dfc6e28414610370578063e72964ba146103f5578063f756e9f8146102eb575b600080fd5b34156101af57600080fd5b6101b7610408565b60405190815260200160405180910390f35b34156101d457600080fd5b6101b761040e565b34156101e757600080fd5b6101ef610415565b60405160208082528190810183818151815260200191508051906020019080838360005b8381101561022b578082015183820152602001610213565b50505050905090810190601f1680156102585780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561027157600080fd5b6101b761044c565b341561028457600080fd5b6101b7610453565b341561029757600080fd5b6101b7610458565b34156102aa57600080fd5b6101b761045d565b34156102bd57600080fd5b6101b7610462565b34156102d057600080fd5b6101b7610467565b34156102e357600080fd5b6101b761046f565b34156102f657600080fd5b6101b7610475565b341561030957600080fd5b6101b761047a565b341561031c57600080fd5b6101b761049e565b341561032f57600080fd5b6101b76104a3565b341561034257600080fd5b6101b76104c7565b341561035557600080fd5b6101b76104cc565b341561036857600080fd5b6101b76104f0565b341561037b57600080fd5b6101b7610514565b341561038e57600080fd5b6101b7610538565b34156103a157600080fd5b6101b761053f565b34156103b457600080fd5b6101b7610544565b34156103c757600080fd5b6101b7610549565b34156103da57600080fd5b6101b7610551565b34156103ed57600080fd5b6101b7610558565b341561040057600080fd5b6101b761055f565b61271081565b624c4b4081565b60408051908101604052600c81527f48494320506f6f6c202320310000000000000000000000000000000000000000602082015281565b6202a30081565b600181565b600281565b600081565b600581565b631dcd650081565b610e1081565b606481565b7f523009c7e41b6b3159012103fccff17371fb03621a0873eaff2f3d87cdb5fe3681565b603281565b7f23e2f15b66feab75c1e6aee1f874ef01b346636c780216c8ed4d327be495ac8481565b600a81565b7f9701a3e1840f59635c219124a5166d8eb2dfd539967f3c80e19f75e48f7df1fc81565b7fd2034e198b9eadf8e1cbe0748ea895a9b61c191942d760814bbf69b40433b55c81565b7f5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d68502509481565b6276a70081565b60c881565b600381565b6301312d0081565b6298968081565b61b6cf1981565b600e815600a165627a7a72305820bae3dea060652359e364928dad86c927f8c510e16b29c2e8c80c5fb4fd49a3f70029",
+  "deployedBytecode": "0x60606040526004361061019f5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166283f8bd81146101a4578063079a6f4e146101c95780630c131757146101dc5780630c432f2d1461026657806313f915dc14610279578063284f90b11461028c5780632b76d8e61461029f5780632c1b96c9146102b2578063358327cb146102c55780633ff8ba9f146102d85780634cdedfe2146102eb57806351b87d5f146102fe5780635e1f9f7b146101c95780636775d09b146103115780636da57da1146103245780636e2bdb95146103375780637be4af941461034a57806384ba11ad1461035d5780638e244ef2146102d85780639557cfa01461037057806395e0b293146101a457806399e93aac146103835780639c7b2b9b14610370578063a2e2d5c814610396578063abf290b5146103a9578063ba684e09146103bc578063c99b168c146103cf578063d3046cec146103e2578063d4dcd43714610279578063de3e0c0e14610383578063dfc6e28414610370578063e72964ba146103f5578063f756e9f8146102eb575b600080fd5b34156101af57600080fd5b6101b7610408565b60405190815260200160405180910390f35b34156101d457600080fd5b6101b761040e565b34156101e757600080fd5b6101ef610415565b60405160208082528190810183818151815260200191508051906020019080838360005b8381101561022b578082015183820152602001610213565b50505050905090810190601f1680156102585780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561027157600080fd5b6101b761044c565b341561028457600080fd5b6101b7610453565b341561029757600080fd5b6101b7610458565b34156102aa57600080fd5b6101b761045d565b34156102bd57600080fd5b6101b7610462565b34156102d057600080fd5b6101b7610467565b34156102e357600080fd5b6101b761046f565b34156102f657600080fd5b6101b7610475565b341561030957600080fd5b6101b761047a565b341561031c57600080fd5b6101b761049e565b341561032f57600080fd5b6101b76104a3565b341561034257600080fd5b6101b76104c7565b341561035557600080fd5b6101b76104cc565b341561036857600080fd5b6101b76104f0565b341561037b57600080fd5b6101b7610514565b341561038e57600080fd5b6101b7610538565b34156103a157600080fd5b6101b761053f565b34156103b457600080fd5b6101b7610544565b34156103c757600080fd5b6101b7610549565b34156103da57600080fd5b6101b7610551565b34156103ed57600080fd5b6101b7610558565b341561040057600080fd5b6101b761055f565b61271081565b624c4b4081565b60408051908101604052600c81527f48494320506f6f6c202320310000000000000000000000000000000000000000602082015281565b6202a30081565b600181565b600281565b600081565b600581565b631dcd650081565b610e1081565b606481565b7f523009c7e41b6b3159012103fccff17371fb03621a0873eaff2f3d87cdb5fe3681565b603281565b7f23e2f15b66feab75c1e6aee1f874ef01b346636c780216c8ed4d327be495ac8481565b600a81565b7f9701a3e1840f59635c219124a5166d8eb2dfd539967f3c80e19f75e48f7df1fc81565b7fd2034e198b9eadf8e1cbe0748ea895a9b61c191942d760814bbf69b40433b55c81565b7f5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d68502509481565b6276a70081565b60c881565b600381565b6301312d0081565b6298968081565b61b6cf1981565b600e815600a165627a7a72305820bae3dea060652359e364928dad86c927f8c510e16b29c2e8c80c5fb4fd49a3f70029",
+  "sourceMap": "255:3242:13:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "255:3242:13:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1258:50;;;;;;;;;;;;;;;;;;;;;;;;;;;1070:44;;;;;;;;;;;;311:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;71:3;;;64:6;52:2;45:3;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;587:63:13;;;;;;;;;;;;1848:55;;;;;;;;;;;;1909;;;;;;;;;;;;2126:57;;;;;;;;;;;;2032:55;;;;;;;;;;;;1153:46;;;;;;;;;;;;875:56;;;;;;;;;;;;1710:66;;;;;;;;;;;;2850:124;;;;;;;;;;;;2349:47;;;;;;;;;;;;2720:124;;;;;;;;;;;;2415:39;;;;;;;;;;;;2590:124;;;;;;;;;;;;2980;;;;;;;;;;;;3110;;;;;;;;;;;;411:54;;;;;;;;;;;;1431:63;;;;;;;;;;;;1782:60;;;;;;;;;;;;786:52;;;;;;;;;;;;1341:53;;;;;;;;;;;;2261:50;;;;;;;;;;;;674:58;;;;;;;;;;;;1258:50;1303:5;1258:50;:::o;1070:44::-;1107:7;1070:44;:::o;311:49::-;;;;;;;;;;;;;;;;;;:::o;587:63::-;644:6;587:63;:::o;1848:55::-;1902:1;1848:55;:::o;1909:::-;1963:1;1909:55;:::o;2126:57::-;2182:1;2126:57;:::o;2032:55::-;2086:1;2032:55;:::o;1153:46::-;1190:9;1153:46;:::o;875:56::-;924:7;875:56;:::o;1710:66::-;1773:3;1710:66;:::o;2850:124::-;2908:66;2850:124;:::o;2349:47::-;2394:2;2349:47;:::o;2720:124::-;2778:66;2720:124;:::o;2415:39::-;2452:2;2415:39;:::o;2590:124::-;2648:66;2590:124;:::o;2980:::-;3038:66;2980:124;:::o;3110:::-;3168:66;3110:124;:::o;411:54::-;458:7;411:54;:::o;1431:63::-;1491:3;1431:63;:::o;1782:60::-;1841:1;1782:60;:::o;786:52::-;830:8;786:52;:::o;1341:53::-;1386:8;1341:53;:::o;2261:50::-;-1:-1:-1;;2261:50:13;:::o;674:58::-;730:2;674:58;:::o",
+  "source": "/**\n * @description Setup Interface contract\n * @copyright (c) 2017 Honest Insurance\n * @author Martin Stellnberger\n * @license GPL-3.0\n */\n\npragma solidity ^0.4.18;\n\nimport \"./Lib.sol\";\n\n\n/** @title Insurance Pool Contract storing all its parameters.*/ \ncontract SetupI {\n    // Name of the insurance Pool\n    string public constant POOL_NAME = \"HIC Pool # 1\";\n\n    // Constants used by the Insurance Pool\n    uint public constant WC_POOL_TARGET_TIME_SEC = 90 days;                // (90 Days)\n    uint public constant DURATION_TO_BOND_MATURITY_SEC = 90 days;          // (90 Days)\n    uint public constant DURATION_BOND_LOCK_NEXT_STATE_SEC = 2 days;       // (2 Days)\n    uint public constant DURATION_WC_EXPENSE_HISTORY_DAYS = 14;            // (14 Days)\n\n    // Yield constants\n    uint public constant YAC_PER_INTERVAL_PPB = 20000000;               // (2% per hour)\n    uint public constant YAC_INTERVAL_DURATION_SEC = 1 hours;           // Accellerate yield in 1 hour intervals\n    uint public constant YAC_EXPENSE_THRESHOLD_PPT = 100;               // (10 %)\n    uint public constant MIN_YIELD_PPB = 5000000;                       // (0.5 %)\n    uint public constant MAX_YIELD_PPB = 500000000;                     // (50 %)\n\n    // Bond constants\n    uint public constant MIN_BOND_PRINCIPAL_CU = 10000;                 // ($ 100)\n    uint public constant MAX_BOND_PRINCIPAL_CU = 10000000;              // ($ 100.000,--)\n    uint public constant BOND_REQUIRED_SECURITY_REFERENCE_PPT = 200;    // (20 %)\n\n    // Policy constants\n    uint public constant MIN_POLICY_CREDIT_CU = 10000;                  // ($ 100)\n    uint public constant MAX_POLICY_CREDIT_CU = 5000000;                // ($ 50.000,--)\n    uint public constant MAX_DURATION_POLICY_RECONCILIATION_DAYS = 100;\n    uint public constant POLICY_RECONCILIATION_SAFETY_MARGIN = 3;\n    uint public constant MIN_DURATION_POLICY_PAUSED_DAY = 1;\n    uint public constant MAX_DURATION_POLICY_PAUSED_DAY = 2;\n    uint public constant DURATION_POLICY_POST_LAPSED_DAY = 1;\n    uint public constant MAX_DURATION_POLICY_LAPSED_DAY = 5;\n\n    // Pool processing costants\n    uint public constant POOL_DAILY_PROCESSING_OFFSET_SEC = 0;\n    uint public constant POOL_DAYLIGHT_SAVING_ADJUSTMENT_SEC = 1 hours;\n    int public constant POOL_TIME_ZONE_OFFSET = -46800;\n\n    // Operator and Trust fees\n    uint public constant POOL_OPERATOR_FEE_PPT = 50;     // (5 %)\n    uint public constant TRUST_FEE_PPT = 10;             // (1 %)\n        \n    // Hashes of the bank account owner and bank account number (sha3(accountOwner, accountNumber))\n    bytes32 public constant PREMIUM_ACCOUNT_PAYMENT_HASH =    0x9701a3e1840f59635c219124a5166d8eb2dfd539967f3c80e19f75e48f7df1fc;\n    bytes32 public constant BOND_ACCOUNT_PAYMENT_HASH =       0x23e2f15b66feab75c1e6aee1f874ef01b346636c780216c8ed4d327be495ac84;\n    bytes32 public constant FUNDING_ACCOUNT_PAYMENT_HASH =    0x523009c7e41b6b3159012103fccff17371fb03621a0873eaff2f3d87cdb5fe36;\n    bytes32 public constant TRUST_ACCOUNT_PAYMENT_HASH =      0xd2034e198b9eadf8e1cbe0748ea895a9b61c191942d760814bbf69b40433b55c;\n    bytes32 public constant OPERATOR_ACCOUNT_PAYMENT_HASH =   0x5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d685025094;\n    bytes32 public constant SETTLEMENT_ACCOUNT_PAYMENT_HASH = 0x5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d685025094;\n    bytes32 public constant ADJUSTOR_ACCOUNT_PAYMENT_HASH =   0x5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d685025094;\n}",
+  "sourcePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/SetupI.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/SetupI.sol",
+      "exportedSymbols": {
+        "SetupI": [
+          6664
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 6562,
+        "name": "PragmaDirective",
+        "src": "141:24:13"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3202,
+          "absolutePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/Lib.sol",
+          "file": "./Lib.sol",
+          "scope": 6665,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 6563,
+        "name": "ImportDirective",
+        "src": "167:19:13"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "@title Insurance Pool Contract storing all its parameters.",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            6664
+          ],
+          "name": "SetupI",
+          "scope": 6665
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "name": "POOL_NAME",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string memory",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string storage pointer"
+                },
+                "id": 6564,
+                "name": "ElementaryTypeName",
+                "src": "311:6:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "48494320506f6f6c20232031",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"HIC Pool # 1\"",
+                  "value": "HIC Pool # 1"
+                },
+                "id": 6565,
+                "name": "Literal",
+                "src": "346:14:13"
+              }
+            ],
+            "id": 6566,
+            "name": "VariableDeclaration",
+            "src": "311:49:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "WC_POOL_TARGET_TIME_SEC",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6567,
+                "name": "ElementaryTypeName",
+                "src": "411:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3930",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "days",
+                  "token": "number",
+                  "type": "int_const 7776000",
+                  "value": "90"
+                },
+                "id": 6568,
+                "name": "Literal",
+                "src": "458:7:13"
+              }
+            ],
+            "id": 6569,
+            "name": "VariableDeclaration",
+            "src": "411:54:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "DURATION_TO_BOND_MATURITY_SEC",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6570,
+                "name": "ElementaryTypeName",
+                "src": "499:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3930",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "days",
+                  "token": "number",
+                  "type": "int_const 7776000",
+                  "value": "90"
+                },
+                "id": 6571,
+                "name": "Literal",
+                "src": "552:7:13"
+              }
+            ],
+            "id": 6572,
+            "name": "VariableDeclaration",
+            "src": "499:60:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "DURATION_BOND_LOCK_NEXT_STATE_SEC",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6573,
+                "name": "ElementaryTypeName",
+                "src": "587:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "32",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "days",
+                  "token": "number",
+                  "type": "int_const 172800",
+                  "value": "2"
+                },
+                "id": 6574,
+                "name": "Literal",
+                "src": "644:6:13"
+              }
+            ],
+            "id": 6575,
+            "name": "VariableDeclaration",
+            "src": "587:63:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "DURATION_WC_EXPENSE_HISTORY_DAYS",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6576,
+                "name": "ElementaryTypeName",
+                "src": "674:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3134",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 14",
+                  "value": "14"
+                },
+                "id": 6577,
+                "name": "Literal",
+                "src": "730:2:13"
+              }
+            ],
+            "id": 6578,
+            "name": "VariableDeclaration",
+            "src": "674:58:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "YAC_PER_INTERVAL_PPB",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6579,
+                "name": "ElementaryTypeName",
+                "src": "786:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3230303030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 20000000",
+                  "value": "20000000"
+                },
+                "id": 6580,
+                "name": "Literal",
+                "src": "830:8:13"
+              }
+            ],
+            "id": 6581,
+            "name": "VariableDeclaration",
+            "src": "786:52:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "YAC_INTERVAL_DURATION_SEC",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6582,
+                "name": "ElementaryTypeName",
+                "src": "875:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "hours",
+                  "token": "number",
+                  "type": "int_const 3600",
+                  "value": "1"
+                },
+                "id": 6583,
+                "name": "Literal",
+                "src": "924:7:13"
+              }
+            ],
+            "id": 6584,
+            "name": "VariableDeclaration",
+            "src": "875:56:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "YAC_EXPENSE_THRESHOLD_PPT",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6585,
+                "name": "ElementaryTypeName",
+                "src": "988:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "313030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 100",
+                  "value": "100"
+                },
+                "id": 6586,
+                "name": "Literal",
+                "src": "1037:3:13"
+              }
+            ],
+            "id": 6587,
+            "name": "VariableDeclaration",
+            "src": "988:52:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MIN_YIELD_PPB",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6588,
+                "name": "ElementaryTypeName",
+                "src": "1070:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "35303030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 5000000",
+                  "value": "5000000"
+                },
+                "id": 6589,
+                "name": "Literal",
+                "src": "1107:7:13"
+              }
+            ],
+            "id": 6590,
+            "name": "VariableDeclaration",
+            "src": "1070:44:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MAX_YIELD_PPB",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6591,
+                "name": "ElementaryTypeName",
+                "src": "1153:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "353030303030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 500000000",
+                  "value": "500000000"
+                },
+                "id": 6592,
+                "name": "Literal",
+                "src": "1190:9:13"
+              }
+            ],
+            "id": 6593,
+            "name": "VariableDeclaration",
+            "src": "1153:46:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MIN_BOND_PRINCIPAL_CU",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6594,
+                "name": "ElementaryTypeName",
+                "src": "1258:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3130303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 10000",
+                  "value": "10000"
+                },
+                "id": 6595,
+                "name": "Literal",
+                "src": "1303:5:13"
+              }
+            ],
+            "id": 6596,
+            "name": "VariableDeclaration",
+            "src": "1258:50:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MAX_BOND_PRINCIPAL_CU",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6597,
+                "name": "ElementaryTypeName",
+                "src": "1341:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3130303030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 10000000",
+                  "value": "10000000"
+                },
+                "id": 6598,
+                "name": "Literal",
+                "src": "1386:8:13"
+              }
+            ],
+            "id": 6599,
+            "name": "VariableDeclaration",
+            "src": "1341:53:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "BOND_REQUIRED_SECURITY_REFERENCE_PPT",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6600,
+                "name": "ElementaryTypeName",
+                "src": "1431:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "323030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 200",
+                  "value": "200"
+                },
+                "id": 6601,
+                "name": "Literal",
+                "src": "1491:3:13"
+              }
+            ],
+            "id": 6602,
+            "name": "VariableDeclaration",
+            "src": "1431:63:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MIN_POLICY_CREDIT_CU",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6603,
+                "name": "ElementaryTypeName",
+                "src": "1538:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3130303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 10000",
+                  "value": "10000"
+                },
+                "id": 6604,
+                "name": "Literal",
+                "src": "1582:5:13"
+              }
+            ],
+            "id": 6605,
+            "name": "VariableDeclaration",
+            "src": "1538:49:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MAX_POLICY_CREDIT_CU",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6606,
+                "name": "ElementaryTypeName",
+                "src": "1621:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "35303030303030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 5000000",
+                  "value": "5000000"
+                },
+                "id": 6607,
+                "name": "Literal",
+                "src": "1665:7:13"
+              }
+            ],
+            "id": 6608,
+            "name": "VariableDeclaration",
+            "src": "1621:51:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MAX_DURATION_POLICY_RECONCILIATION_DAYS",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6609,
+                "name": "ElementaryTypeName",
+                "src": "1710:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "313030",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 100",
+                  "value": "100"
+                },
+                "id": 6610,
+                "name": "Literal",
+                "src": "1773:3:13"
+              }
+            ],
+            "id": 6611,
+            "name": "VariableDeclaration",
+            "src": "1710:66:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "POLICY_RECONCILIATION_SAFETY_MARGIN",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6612,
+                "name": "ElementaryTypeName",
+                "src": "1782:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "33",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 3",
+                  "value": "3"
+                },
+                "id": 6613,
+                "name": "Literal",
+                "src": "1841:1:13"
+              }
+            ],
+            "id": 6614,
+            "name": "VariableDeclaration",
+            "src": "1782:60:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MIN_DURATION_POLICY_PAUSED_DAY",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6615,
+                "name": "ElementaryTypeName",
+                "src": "1848:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1",
+                  "value": "1"
+                },
+                "id": 6616,
+                "name": "Literal",
+                "src": "1902:1:13"
+              }
+            ],
+            "id": 6617,
+            "name": "VariableDeclaration",
+            "src": "1848:55:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MAX_DURATION_POLICY_PAUSED_DAY",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6618,
+                "name": "ElementaryTypeName",
+                "src": "1909:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "32",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 2",
+                  "value": "2"
+                },
+                "id": 6619,
+                "name": "Literal",
+                "src": "1963:1:13"
+              }
+            ],
+            "id": 6620,
+            "name": "VariableDeclaration",
+            "src": "1909:55:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "DURATION_POLICY_POST_LAPSED_DAY",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6621,
+                "name": "ElementaryTypeName",
+                "src": "1970:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1",
+                  "value": "1"
+                },
+                "id": 6622,
+                "name": "Literal",
+                "src": "2025:1:13"
+              }
+            ],
+            "id": 6623,
+            "name": "VariableDeclaration",
+            "src": "1970:56:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "MAX_DURATION_POLICY_LAPSED_DAY",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6624,
+                "name": "ElementaryTypeName",
+                "src": "2032:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "35",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 5",
+                  "value": "5"
+                },
+                "id": 6625,
+                "name": "Literal",
+                "src": "2086:1:13"
+              }
+            ],
+            "id": 6626,
+            "name": "VariableDeclaration",
+            "src": "2032:55:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "POOL_DAILY_PROCESSING_OFFSET_SEC",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6627,
+                "name": "ElementaryTypeName",
+                "src": "2126:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 6628,
+                "name": "Literal",
+                "src": "2182:1:13"
+              }
+            ],
+            "id": 6629,
+            "name": "VariableDeclaration",
+            "src": "2126:57:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "POOL_DAYLIGHT_SAVING_ADJUSTMENT_SEC",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6630,
+                "name": "ElementaryTypeName",
+                "src": "2189:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": "hours",
+                  "token": "number",
+                  "type": "int_const 3600",
+                  "value": "1"
+                },
+                "id": 6631,
+                "name": "Literal",
+                "src": "2248:7:13"
+              }
+            ],
+            "id": 6632,
+            "name": "VariableDeclaration",
+            "src": "2189:66:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "POOL_TIME_ZONE_OFFSET",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "int256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "int",
+                  "type": "int256"
+                },
+                "id": 6633,
+                "name": "ElementaryTypeName",
+                "src": "2261:3:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "operator": "-",
+                  "prefix": true,
+                  "type": "int_const -46800"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "3436383030",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "int_const 46800",
+                      "value": "46800"
+                    },
+                    "id": 6634,
+                    "name": "Literal",
+                    "src": "2306:5:13"
+                  }
+                ],
+                "id": 6635,
+                "name": "UnaryOperation",
+                "src": "2305:6:13"
+              }
+            ],
+            "id": 6636,
+            "name": "VariableDeclaration",
+            "src": "2261:50:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "POOL_OPERATOR_FEE_PPT",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6637,
+                "name": "ElementaryTypeName",
+                "src": "2349:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3530",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 50",
+                  "value": "50"
+                },
+                "id": 6638,
+                "name": "Literal",
+                "src": "2394:2:13"
+              }
+            ],
+            "id": 6639,
+            "name": "VariableDeclaration",
+            "src": "2349:47:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "TRUST_FEE_PPT",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 6640,
+                "name": "ElementaryTypeName",
+                "src": "2415:4:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "3130",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 10",
+                  "value": "10"
+                },
+                "id": 6641,
+                "name": "Literal",
+                "src": "2452:2:13"
+              }
+            ],
+            "id": 6642,
+            "name": "VariableDeclaration",
+            "src": "2415:39:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "PREMIUM_ACCOUNT_PAYMENT_HASH",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 6643,
+                "name": "ElementaryTypeName",
+                "src": "2590:7:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "307839373031613365313834306635393633356332313931323461353136366438656232646664353339393637663363383065313966373565343866376466316663",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 68302138047688066783010399684407071043637162832994319991773886377787926639100",
+                  "value": "0x9701a3e1840f59635c219124a5166d8eb2dfd539967f3c80e19f75e48f7df1fc"
+                },
+                "id": 6644,
+                "name": "Literal",
+                "src": "2648:66:13"
+              }
+            ],
+            "id": 6645,
+            "name": "VariableDeclaration",
+            "src": "2590:124:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "BOND_ACCOUNT_PAYMENT_HASH",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 6646,
+                "name": "ElementaryTypeName",
+                "src": "2720:7:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "307832336532663135623636666561623735633165366165653166383734656630316233343636333663373830323136633865643464333237626534393561633834",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 16231922922125580503296806172107928611608108822251348281929215385223642328196",
+                  "value": "0x23e2f15b66feab75c1e6aee1f874ef01b346636c780216c8ed4d327be495ac84"
+                },
+                "id": 6647,
+                "name": "Literal",
+                "src": "2778:66:13"
+              }
+            ],
+            "id": 6648,
+            "name": "VariableDeclaration",
+            "src": "2720:124:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "FUNDING_ACCOUNT_PAYMENT_HASH",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 6649,
+                "name": "ElementaryTypeName",
+                "src": "2850:7:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "307835323330303963376534316236623331353930313231303366636366663137333731666230333632316130383733656166663266336438376364623566653336",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 37174529747706196080808044704744435052567606780797359025520530535899628699190",
+                  "value": "0x523009c7e41b6b3159012103fccff17371fb03621a0873eaff2f3d87cdb5fe36"
+                },
+                "id": 6650,
+                "name": "Literal",
+                "src": "2908:66:13"
+              }
+            ],
+            "id": 6651,
+            "name": "VariableDeclaration",
+            "src": "2850:124:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "TRUST_ACCOUNT_PAYMENT_HASH",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 6652,
+                "name": "ElementaryTypeName",
+                "src": "2980:7:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "307864323033346531393862396561646638653163626530373438656138393561396236316331393139343264373630383134626266363962343034333362353563",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 94991537768597678588611273543954841412160910586086415554655999377345147549020",
+                  "value": "0xd2034e198b9eadf8e1cbe0748ea895a9b61c191942d760814bbf69b40433b55c"
+                },
+                "id": 6653,
+                "name": "Literal",
+                "src": "3038:66:13"
+              }
+            ],
+            "id": 6654,
+            "name": "VariableDeclaration",
+            "src": "2980:124:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "OPERATOR_ACCOUNT_PAYMENT_HASH",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 6655,
+                "name": "ElementaryTypeName",
+                "src": "3110:7:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "307835646662373061383539623833646361656530383461343333383236383934303533333333356263393237343734613562353336303964363835303235303934",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 42509351065813615675066385259975069501812123423636358227294796704281239113876",
+                  "value": "0x5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d685025094"
+                },
+                "id": 6656,
+                "name": "Literal",
+                "src": "3168:66:13"
+              }
+            ],
+            "id": 6657,
+            "name": "VariableDeclaration",
+            "src": "3110:124:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "SETTLEMENT_ACCOUNT_PAYMENT_HASH",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 6658,
+                "name": "ElementaryTypeName",
+                "src": "3240:7:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "307835646662373061383539623833646361656530383461343333383236383934303533333333356263393237343734613562353336303964363835303235303934",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 42509351065813615675066385259975069501812123423636358227294796704281239113876",
+                  "value": "0x5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d685025094"
+                },
+                "id": 6659,
+                "name": "Literal",
+                "src": "3298:66:13"
+              }
+            ],
+            "id": 6660,
+            "name": "VariableDeclaration",
+            "src": "3240:124:13"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "ADJUSTOR_ACCOUNT_PAYMENT_HASH",
+              "scope": 6664,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 6661,
+                "name": "ElementaryTypeName",
+                "src": "3370:7:13"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "307835646662373061383539623833646361656530383461343333383236383934303533333333356263393237343734613562353336303964363835303235303934",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 42509351065813615675066385259975069501812123423636358227294796704281239113876",
+                  "value": "0x5dfb70a859b83dcaee084a4338268940533335bc927474a5b53609d685025094"
+                },
+                "id": 6662,
+                "name": "Literal",
+                "src": "3428:66:13"
+              }
+            ],
+            "id": 6663,
+            "name": "VariableDeclaration",
+            "src": "3370:124:13"
+          }
+        ],
+        "id": 6664,
+        "name": "ContractDefinition",
+        "src": "255:3242:13"
+      }
+    ],
+    "id": 6665,
+    "name": "SourceUnit",
+    "src": "141:3356:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-30T23:40:32.072Z"
+}

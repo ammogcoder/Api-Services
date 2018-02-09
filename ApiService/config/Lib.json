@@ -1,0 +1,3301 @@
+{
+  "contractName": "Lib",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "Lib.HashMappping storage"
+        },
+        {
+          "name": "_idx",
+          "type": "uint256"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "Lib.HashMappping storage"
+        },
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isActive",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "Lib.HashMappping storage"
+        },
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isArchived",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "Lib.HashMappping storage"
+        },
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "add",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "Lib.HashMappping storage"
+        },
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isValid",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "Lib.HashMappping storage"
+        },
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "archive",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6102e68061001e6000396000f3006060604052600436106100775763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663085db8ab811461007c578063199ef7be1461009c57806342614936146100be578063ec726089146100cc578063ecb48425146100dc578063fa8ae1cb146100ea575b600080fd5b61008a6004356024356100f8565b60405190815260200160405180910390f35b6100aa60043560243561010e565b604051901515815260200160405180910390f35b6100aa600435602435610124565b6100da60043560243561013d565b005b6100aa6004356024356101bc565b6100da6004356024356101f0565b6000908152600291909101602052604090205490565b6000908152602091909152604090205460ff1690565b6000908152600191909101602052604090205460ff1690565b60008181526020839052604090205460ff1615801561016d5750600081815260018301602052604090205460ff16155b151561017557fe5b600081815260208381526040808320805460ff1916600190811790915560048601805485526002870190935292209290925581548101909155600590910180549091019055565b60008181526020839052604081205460ff16806101e95750600082815260018401602052604090205460ff165b9392505050565b60008181526020839052604090205460ff16151560011461020d57fe5b600081815260208381526040808320805460ff199081169091556001808701808552838620805490931682179092556005870180546000190190556003870154855260028701845282852054855292529091205460ff16151514156102785760038201805460010190555b60038201546000908152600283016020908152604080832054835260018086019092529091205460ff16151514156102b65760038201805460010190555b50505600a165627a7a72305820219f0a6a40609b73945d2fb0a6c604589b983ac8893cbc7519974eedef4b610e0029",
+  "deployedBytecode": "0x6060604052600436106100775763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663085db8ab811461007c578063199ef7be1461009c57806342614936146100be578063ec726089146100cc578063ecb48425146100dc578063fa8ae1cb146100ea575b600080fd5b61008a6004356024356100f8565b60405190815260200160405180910390f35b6100aa60043560243561010e565b604051901515815260200160405180910390f35b6100aa600435602435610124565b6100da60043560243561013d565b005b6100aa6004356024356101bc565b6100da6004356024356101f0565b6000908152600291909101602052604090205490565b6000908152602091909152604090205460ff1690565b6000908152600191909101602052604090205460ff1690565b60008181526020839052604090205460ff1615801561016d5750600081815260018301602052604090205460ff16155b151561017557fe5b600081815260208381526040808320805460ff1916600190811790915560048601805485526002870190935292209290925581548101909155600590910180549091019055565b60008181526020839052604081205460ff16806101e95750600082815260018401602052604090205460ff165b9392505050565b60008181526020839052604090205460ff16151560011461020d57fe5b600081815260208381526040808320805460ff199081169091556001808701808552838620805490931682179092556005870180546000190190556003870154855260028701845282852054855292529091205460ff16151514156102785760038201805460010190555b60038201546000908152600283016020908152604080832054835260018086019092529091205460ff16151514156102b65760038201805460010190555b50505600a165627a7a72305820219f0a6a40609b73945d2fb0a6c604589b983ac8893cbc7519974eedef4b610e0029",
+  "sourceMap": "232:5757:7:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "232:5757:7:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5858:129;;;;;;;;;;;;;;;;;;;;;;;4552:137;;;;;;;;;;;;;;;;;;;;;;;;;4965:140;;;;;;;;2690:485;;;;;;;;;;5411:165;;;;;;;;3387:884;;;;;;;;5858:129;5934:7;5960:20;;;:14;;;;;:20;;;;;;;5858:129::o;4552:137::-;4637:4;4660:22;;;;;;;;;;;;;;;4552:137::o;4965:140::-;5052:4;5075:23;;;:16;;;;;:23;;;;;;;;;4965:140::o;2690:485::-;2876:15;:22;;;;;;;;;;;;;:31;;;2875:71;;-1:-1:-1;2913:23:7;;;;:16;;;:23;;;;;;;;:32;2875:71;2868:79;;;;;;3003:15;:22;;;;;;;;;;;:29;;-1:-1:-1;;3003:29:7;3028:4;3003:29;;;;;;3101:12;;;;;3086:28;;:14;;;:28;;;;;:36;;;;3132:14;;;;;;;3156:10;;;;:12;;;;;;;2690:485::o;5411:165::-;5495:4;5519:22;;;;;;;;;;;;;;:49;;-1:-1:-1;5545:23:7;;;;:16;;;:23;;;;;;;;5519:49;5511:58;5411:165;-1:-1:-1;;;5411:165:7:o;3387:884::-;3512:15;:22;;;;;;;;;;;;;:30;;:22;:30;3505:38;;;;3626:5;3601:22;;;;;;;;;;;:30;;-1:-1:-1;;3601:30:7;;;;;;;3680:16;;;:23;;;;;;:30;;;;;;;;;;3778:10;;;:12;;-1:-1:-1;;3778:12:7;;;3915:13;;;;3900:29;;:14;;;:29;;;;;;3883:47;;;;;;;;3601:30;3883:47;:55;;;3879:101;;;3954:13;;;:15;;;;;;3879:101;4200:13;;;;4168:47;4185:29;;;:14;;;:29;;;;;;;;;4168:47;;:16;;;;:47;;;;;;;;;:55;;;4164:101;;;4239:13;;;:15;;;;;;4164:101;3387:884;;:::o",
+  "source": "/**\n * @description Library contract\n * @copyright (c) 2017 Honest Insurance\n * @author Martin Stellnberger\n * @license GPL-3.0\n */\n\npragma solidity ^0.4.18;\n\n\n/** @title Library functions used by contracts within this ecosystem.*/\nlibrary Lib {\n    \n    /**\n    * @dev Enum of the diffent Bank accounts held by the pool\n    */\n    enum PaymentAdviceType {\n        /*0*/ PremiumRefund,\n        /*1*/ Premium,\n        /*2*/ BondMaturity,\n        /*3*/ Overflow,\n        /*4*/ PoolOperator,\n        /*5*/ ServiceProvider,\n        /*6*/ Trust\n    }\n\n    /**\n    * @dev Enum of the diffent Bank accounts held by the pool\n    */\n    enum AccountType {\n        /*0*/ PremiumAccount,\n        /*1*/ BondAccount,\n        /*2*/ FundingAccount\n    }\n\n    /**\n    * @dev Enum of the two types of bank transactions (Credit; Debit)\n    */\n    enum TransactionType {\n        /*0*/ Credit,\n        /*1*/ Debit\n    }\n\n    /**\n    * @dev Enum of the different states a Bond can be in.\n    */\n    enum BondState {\n        /*0*/ Created,\n        /*1*/ SecuredBondPrincipal,\n        /*2*/ SecuredReferenceBond,\n        /*3*/ Signed,\n        /*4*/ Issued,\n        /*5*/ LockedReferenceBond,\n        /*6*/ Defaulted,\n        /*7*/ Matured\n    }\n\n    /**\n    * @dev Enum of the different states a Policy can be in.\n    */\n    enum PolicyState {\n        /*0*/ Paused,       // Policy owner deactivated the policy termporarily (temporarily prevent from continuing or being in force or effect)\n        /*1*/ Issued,       // Policy is in an active state\n        /*2*/ Lapsed,       // Policy ran out of funds (no longer valid; expired.)\n        /*3*/ PostLapsed,   // Policy has been refunded and is due for Re-Issuing\n        /*4*/ Retired       // The policy has been cancelled and is archived permanently.\n    }\n\n    /**\n    * @dev Enum of the different states a Settlement can be in.\n    */\n    enum SettlementState {\n        /*0*/ Created,      // An adjustor created a new Settlement\n        /*1*/ Processing,   // Settlement is in a processing state\n        /*2*/ Settled       // The settlement request has been completed (no further amendments are possible)\n    }\n    \n    /**\n    * @dev Efficient storage container for active and archived hashes enabling iteration\n    */\n\tstruct HashMappping {\n        mapping(bytes32 => bool) hashActive;\n        mapping(bytes32 => bool) hashArchive;\n        mapping(uint => bytes32) itHashMap;\n        uint firstIdx;\n        uint nextIdx;\n        uint count;\n    }\n\n    /**\n    * @dev Add a new hash to the storage container if it is not yet part of it\n    * @param self Struct storage container pointing to itself\n    * @param _hash Hash to add to the struct\n    */\n    function add(HashMappping storage self, bytes32 _hash) public {\n        // Ensure that the hash has not been previously already been added to the active or archived list\n        assert((self.hashActive[_hash] == false) && (self.hashArchive[_hash] == false));\n        // Activate the hash (set it to true)\n        self.hashActive[_hash] = true;\n        // Index the hash with the next idx\n        self.itHashMap[self.nextIdx] = _hash;\n        self.nextIdx++;\n        self.count++;\n    }\n\n    /**\n    * @dev Archives an existing hash if it is an active hash part of the struct\n    * @param self Struct storage container pointing to itself\n    * @param _hash Hash to archive in the struct\n    */\n    function archive(HashMappping storage self, bytes32 _hash) public {\n        // Ensure that the hash is active\n        assert(self.hashActive[_hash] == true);\n        // 'Remove' _hash from the valid hashes\n        self.hashActive[_hash] = false;\n        // Add the hash to the archive\n        self.hashArchive[_hash] = true;\n        // Reduce the size of the number of active hashes\n        self.count--;\n\n        // Check if the first hash in the active list is in an archived state\n        if (self.hashArchive[self.itHashMap[self.firstIdx]] == true) {\n            self.firstIdx++;\n        }\n\n        // Repeat one more time to allowing for 'catch up' of firstIdx;\n        // Check if the first hash in the active list is still active or has it already been archived\n        if (self.hashArchive[self.itHashMap[self.firstIdx]] == true) {\n            self.firstIdx++;\n        }\n    }\n\n    /**\n    * @dev Verifies if the hash provided is a currently active hash and part of the mapping\n    * @param self Struct storage container pointing to itself\n    * @param _hash Hash to verify\n    * @return Indicates if the hash is active (and part of the mapping)\n    */\n    function isActive(HashMappping storage self, bytes32 _hash) public constant returns (bool) {\n        return self.hashActive[_hash];\n    }\n\n    /**\n    * @dev Verifies if the hash provided is an archived hash and part of the mapping\n    * @param self Struct storage container pointing to itself\n    * @param _hash Hash to verify\n    * @return Indicates if the hash is archived (and part of the mapping)\n    */\n    function isArchived(HashMappping storage self, bytes32 _hash) public constant returns (bool) {\n        return self.hashArchive[_hash];\n    }\n\n    /**\n    * @dev Verifies if the hash provided is either an active or archived hash and part of the mapping\n    * @param self Struct storage container pointing to itself\n    * @param _hash Hash to verify\n    * @return Indicates if the hash is either active or archived (part of the mapping)\n    */\n    function isValid(HashMappping storage self, bytes32 _hash) public constant returns (bool) {\n        return (self.hashActive[_hash] || self.hashArchive[_hash]);\n    }\n\n    /**\n    * @dev Retrieve the specified (_idx) hash from the struct\n    * @param self Struct storage container pointing to itself\n    * @param _idx Index of the hash to retrieve\n    * @return Hash specified by the _idx value (returns 0x0 if _idx is an invalid index)\n    */\n    function get(HashMappping storage self, uint _idx) public constant returns (bytes32) {\n        return self.itHashMap[_idx];\n    }\n}",
+  "sourcePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/Lib.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Martin/Dapp/01HIC/46-HIC-2017-01-31/contracts/Lib.sol",
+      "exportedSymbols": {
+        "Lib": [
+          3201
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 2956,
+        "name": "PragmaDirective",
+        "src": "133:24:7"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "documentation": "@title Library functions used by contracts within this ecosystem.",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3201
+          ],
+          "name": "Lib",
+          "scope": 3202
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "Lib.PaymentAdviceType",
+              "name": "PaymentAdviceType"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "PremiumRefund"
+                },
+                "id": 2957,
+                "name": "EnumValue",
+                "src": "371:13:7"
+              },
+              {
+                "attributes": {
+                  "name": "Premium"
+                },
+                "id": 2958,
+                "name": "EnumValue",
+                "src": "400:7:7"
+              },
+              {
+                "attributes": {
+                  "name": "BondMaturity"
+                },
+                "id": 2959,
+                "name": "EnumValue",
+                "src": "423:12:7"
+              },
+              {
+                "attributes": {
+                  "name": "Overflow"
+                },
+                "id": 2960,
+                "name": "EnumValue",
+                "src": "451:8:7"
+              },
+              {
+                "attributes": {
+                  "name": "PoolOperator"
+                },
+                "id": 2961,
+                "name": "EnumValue",
+                "src": "475:12:7"
+              },
+              {
+                "attributes": {
+                  "name": "ServiceProvider"
+                },
+                "id": 2962,
+                "name": "EnumValue",
+                "src": "503:15:7"
+              },
+              {
+                "attributes": {
+                  "name": "Trust"
+                },
+                "id": 2963,
+                "name": "EnumValue",
+                "src": "534:5:7"
+              }
+            ],
+            "id": 2964,
+            "name": "EnumDefinition",
+            "src": "332:213:7"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Lib.AccountType",
+              "name": "AccountType"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "PremiumAccount"
+                },
+                "id": 2965,
+                "name": "EnumValue",
+                "src": "661:14:7"
+              },
+              {
+                "attributes": {
+                  "name": "BondAccount"
+                },
+                "id": 2966,
+                "name": "EnumValue",
+                "src": "691:11:7"
+              },
+              {
+                "attributes": {
+                  "name": "FundingAccount"
+                },
+                "id": 2967,
+                "name": "EnumValue",
+                "src": "718:14:7"
+              }
+            ],
+            "id": 2968,
+            "name": "EnumDefinition",
+            "src": "628:110:7"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Lib.TransactionType",
+              "name": "TransactionType"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "Credit"
+                },
+                "id": 2969,
+                "name": "EnumValue",
+                "src": "866:6:7"
+              },
+              {
+                "attributes": {
+                  "name": "Debit"
+                },
+                "id": 2970,
+                "name": "EnumValue",
+                "src": "888:5:7"
+              }
+            ],
+            "id": 2971,
+            "name": "EnumDefinition",
+            "src": "829:70:7"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Lib.BondState",
+              "name": "BondState"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "Created"
+                },
+                "id": 2972,
+                "name": "EnumValue",
+                "src": "1009:7:7"
+              },
+              {
+                "attributes": {
+                  "name": "SecuredBondPrincipal"
+                },
+                "id": 2973,
+                "name": "EnumValue",
+                "src": "1032:20:7"
+              },
+              {
+                "attributes": {
+                  "name": "SecuredReferenceBond"
+                },
+                "id": 2974,
+                "name": "EnumValue",
+                "src": "1068:20:7"
+              },
+              {
+                "attributes": {
+                  "name": "Signed"
+                },
+                "id": 2975,
+                "name": "EnumValue",
+                "src": "1104:6:7"
+              },
+              {
+                "attributes": {
+                  "name": "Issued"
+                },
+                "id": 2976,
+                "name": "EnumValue",
+                "src": "1126:6:7"
+              },
+              {
+                "attributes": {
+                  "name": "LockedReferenceBond"
+                },
+                "id": 2977,
+                "name": "EnumValue",
+                "src": "1148:19:7"
+              },
+              {
+                "attributes": {
+                  "name": "Defaulted"
+                },
+                "id": 2978,
+                "name": "EnumValue",
+                "src": "1183:9:7"
+              },
+              {
+                "attributes": {
+                  "name": "Matured"
+                },
+                "id": 2979,
+                "name": "EnumValue",
+                "src": "1208:7:7"
+              }
+            ],
+            "id": 2980,
+            "name": "EnumDefinition",
+            "src": "978:243:7"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Lib.PolicyState",
+              "name": "PolicyState"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "Paused"
+                },
+                "id": 2981,
+                "name": "EnumValue",
+                "src": "1335:6:7"
+              },
+              {
+                "attributes": {
+                  "name": "Issued"
+                },
+                "id": 2982,
+                "name": "EnumValue",
+                "src": "1481:6:7"
+              },
+              {
+                "attributes": {
+                  "name": "Lapsed"
+                },
+                "id": 2983,
+                "name": "EnumValue",
+                "src": "1541:6:7"
+              },
+              {
+                "attributes": {
+                  "name": "PostLapsed"
+                },
+                "id": 2984,
+                "name": "EnumValue",
+                "src": "1624:10:7"
+              },
+              {
+                "attributes": {
+                  "name": "Retired"
+                },
+                "id": 2985,
+                "name": "EnumValue",
+                "src": "1706:7:7"
+              }
+            ],
+            "id": 2986,
+            "name": "EnumDefinition",
+            "src": "1302:485:7"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Lib.SettlementState",
+              "name": "SettlementState"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "Created"
+                },
+                "id": 2987,
+                "name": "EnumValue",
+                "src": "1909:7:7"
+              },
+              {
+                "attributes": {
+                  "name": "Processing"
+                },
+                "id": 2988,
+                "name": "EnumValue",
+                "src": "1977:10:7"
+              },
+              {
+                "attributes": {
+                  "name": "Settled"
+                },
+                "id": 2989,
+                "name": "EnumValue",
+                "src": "2044:7:7"
+              }
+            ],
+            "id": 2990,
+            "name": "EnumDefinition",
+            "src": "1872:273:7"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Lib.HashMappping",
+              "name": "HashMappping",
+              "scope": 3201,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "hashActive",
+                  "scope": 3009,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "mapping(bytes32 => bool)",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "mapping(bytes32 => bool)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2991,
+                        "name": "ElementaryTypeName",
+                        "src": "2294:7:7"
+                      },
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2992,
+                        "name": "ElementaryTypeName",
+                        "src": "2305:4:7"
+                      }
+                    ],
+                    "id": 2993,
+                    "name": "Mapping",
+                    "src": "2286:24:7"
+                  }
+                ],
+                "id": 2994,
+                "name": "VariableDeclaration",
+                "src": "2286:35:7"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "hashArchive",
+                  "scope": 3009,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "mapping(bytes32 => bool)",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "mapping(bytes32 => bool)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2995,
+                        "name": "ElementaryTypeName",
+                        "src": "2339:7:7"
+                      },
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 2996,
+                        "name": "ElementaryTypeName",
+                        "src": "2350:4:7"
+                      }
+                    ],
+                    "id": 2997,
+                    "name": "Mapping",
+                    "src": "2331:24:7"
+                  }
+                ],
+                "id": 2998,
+                "name": "VariableDeclaration",
+                "src": "2331:36:7"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "itHashMap",
+                  "scope": 3009,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "mapping(uint256 => bytes32)",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "mapping(uint256 => bytes32)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 2999,
+                        "name": "ElementaryTypeName",
+                        "src": "2385:4:7"
+                      },
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3000,
+                        "name": "ElementaryTypeName",
+                        "src": "2393:7:7"
+                      }
+                    ],
+                    "id": 3001,
+                    "name": "Mapping",
+                    "src": "2377:24:7"
+                  }
+                ],
+                "id": 3002,
+                "name": "VariableDeclaration",
+                "src": "2377:34:7"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "firstIdx",
+                  "scope": 3009,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3003,
+                    "name": "ElementaryTypeName",
+                    "src": "2421:4:7"
+                  }
+                ],
+                "id": 3004,
+                "name": "VariableDeclaration",
+                "src": "2421:13:7"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "nextIdx",
+                  "scope": 3009,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3005,
+                    "name": "ElementaryTypeName",
+                    "src": "2444:4:7"
+                  }
+                ],
+                "id": 3006,
+                "name": "VariableDeclaration",
+                "src": "2444:12:7"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "count",
+                  "scope": 3009,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3007,
+                    "name": "ElementaryTypeName",
+                    "src": "2466:4:7"
+                  }
+                ],
+                "id": 3008,
+                "name": "VariableDeclaration",
+                "src": "2466:10:7"
+              }
+            ],
+            "id": 3009,
+            "name": "StructDefinition",
+            "src": "2256:227:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "add",
+              "payable": false,
+              "scope": 3201,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "self",
+                      "scope": 3062,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct Lib.HashMappping storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "HashMappping",
+                          "referencedDeclaration": 3009,
+                          "type": "struct Lib.HashMappping storage pointer"
+                        },
+                        "id": 3010,
+                        "name": "UserDefinedTypeName",
+                        "src": "2703:12:7"
+                      }
+                    ],
+                    "id": 3011,
+                    "name": "VariableDeclaration",
+                    "src": "2703:25:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_hash",
+                      "scope": 3062,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3012,
+                        "name": "ElementaryTypeName",
+                        "src": "2730:7:7"
+                      }
+                    ],
+                    "id": 3013,
+                    "name": "VariableDeclaration",
+                    "src": "2730:13:7"
+                  }
+                ],
+                "id": 3014,
+                "name": "ParameterList",
+                "src": "2702:42:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3015,
+                "name": "ParameterList",
+                "src": "2752:0:7"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7413,
+                              "type": "function (bool) pure",
+                              "value": "assert"
+                            },
+                            "id": 3016,
+                            "name": "Identifier",
+                            "src": "2868:6:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "&&",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isInlineArray": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "commonType": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                      },
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "operator": "==",
+                                      "type": "bool"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": true,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "type": "bool"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "isConstant": false,
+                                              "isLValue": true,
+                                              "isPure": false,
+                                              "lValueRequested": false,
+                                              "member_name": "hashActive",
+                                              "referencedDeclaration": 2994,
+                                              "type": "mapping(bytes32 => bool)"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": null,
+                                                  "overloadedDeclarations": [
+                                                    null
+                                                  ],
+                                                  "referencedDeclaration": 3011,
+                                                  "type": "struct Lib.HashMappping storage pointer",
+                                                  "value": "self"
+                                                },
+                                                "id": 3017,
+                                                "name": "Identifier",
+                                                "src": "2876:4:7"
+                                              }
+                                            ],
+                                            "id": 3018,
+                                            "name": "MemberAccess",
+                                            "src": "2876:15:7"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 3013,
+                                              "type": "bytes32",
+                                              "value": "_hash"
+                                            },
+                                            "id": 3019,
+                                            "name": "Identifier",
+                                            "src": "2892:5:7"
+                                          }
+                                        ],
+                                        "id": 3020,
+                                        "name": "IndexAccess",
+                                        "src": "2876:22:7"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "hexvalue": "66616c7365",
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "lValueRequested": false,
+                                          "subdenomination": null,
+                                          "token": "bool",
+                                          "type": "bool",
+                                          "value": "false"
+                                        },
+                                        "id": 3021,
+                                        "name": "Literal",
+                                        "src": "2902:5:7"
+                                      }
+                                    ],
+                                    "id": 3022,
+                                    "name": "BinaryOperation",
+                                    "src": "2876:31:7"
+                                  }
+                                ],
+                                "id": 3023,
+                                "name": "TupleExpression",
+                                "src": "2875:33:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isInlineArray": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "commonType": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                      },
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "operator": "==",
+                                      "type": "bool"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": true,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "type": "bool"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "isConstant": false,
+                                              "isLValue": true,
+                                              "isPure": false,
+                                              "lValueRequested": false,
+                                              "member_name": "hashArchive",
+                                              "referencedDeclaration": 2998,
+                                              "type": "mapping(bytes32 => bool)"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": null,
+                                                  "overloadedDeclarations": [
+                                                    null
+                                                  ],
+                                                  "referencedDeclaration": 3011,
+                                                  "type": "struct Lib.HashMappping storage pointer",
+                                                  "value": "self"
+                                                },
+                                                "id": 3024,
+                                                "name": "Identifier",
+                                                "src": "2913:4:7"
+                                              }
+                                            ],
+                                            "id": 3025,
+                                            "name": "MemberAccess",
+                                            "src": "2913:16:7"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 3013,
+                                              "type": "bytes32",
+                                              "value": "_hash"
+                                            },
+                                            "id": 3026,
+                                            "name": "Identifier",
+                                            "src": "2930:5:7"
+                                          }
+                                        ],
+                                        "id": 3027,
+                                        "name": "IndexAccess",
+                                        "src": "2913:23:7"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "hexvalue": "66616c7365",
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "lValueRequested": false,
+                                          "subdenomination": null,
+                                          "token": "bool",
+                                          "type": "bool",
+                                          "value": "false"
+                                        },
+                                        "id": 3028,
+                                        "name": "Literal",
+                                        "src": "2940:5:7"
+                                      }
+                                    ],
+                                    "id": 3029,
+                                    "name": "BinaryOperation",
+                                    "src": "2913:32:7"
+                                  }
+                                ],
+                                "id": 3030,
+                                "name": "TupleExpression",
+                                "src": "2912:34:7"
+                              }
+                            ],
+                            "id": 3031,
+                            "name": "BinaryOperation",
+                            "src": "2875:71:7"
+                          }
+                        ],
+                        "id": 3032,
+                        "name": "FunctionCall",
+                        "src": "2868:79:7"
+                      }
+                    ],
+                    "id": 3033,
+                    "name": "ExpressionStatement",
+                    "src": "2868:79:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "hashActive",
+                                  "referencedDeclaration": 2994,
+                                  "type": "mapping(bytes32 => bool)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3011,
+                                      "type": "struct Lib.HashMappping storage pointer",
+                                      "value": "self"
+                                    },
+                                    "id": 3034,
+                                    "name": "Identifier",
+                                    "src": "3003:4:7"
+                                  }
+                                ],
+                                "id": 3037,
+                                "name": "MemberAccess",
+                                "src": "3003:15:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3013,
+                                  "type": "bytes32",
+                                  "value": "_hash"
+                                },
+                                "id": 3036,
+                                "name": "Identifier",
+                                "src": "3019:5:7"
+                              }
+                            ],
+                            "id": 3038,
+                            "name": "IndexAccess",
+                            "src": "3003:22:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 3039,
+                            "name": "Literal",
+                            "src": "3028:4:7"
+                          }
+                        ],
+                        "id": 3040,
+                        "name": "Assignment",
+                        "src": "3003:29:7"
+                      }
+                    ],
+                    "id": 3041,
+                    "name": "ExpressionStatement",
+                    "src": "3003:29:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "bytes32"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "itHashMap",
+                                  "referencedDeclaration": 3002,
+                                  "type": "mapping(uint256 => bytes32)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3011,
+                                      "type": "struct Lib.HashMappping storage pointer",
+                                      "value": "self"
+                                    },
+                                    "id": 3042,
+                                    "name": "Identifier",
+                                    "src": "3086:4:7"
+                                  }
+                                ],
+                                "id": 3046,
+                                "name": "MemberAccess",
+                                "src": "3086:14:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "nextIdx",
+                                  "referencedDeclaration": 3006,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3011,
+                                      "type": "struct Lib.HashMappping storage pointer",
+                                      "value": "self"
+                                    },
+                                    "id": 3044,
+                                    "name": "Identifier",
+                                    "src": "3101:4:7"
+                                  }
+                                ],
+                                "id": 3045,
+                                "name": "MemberAccess",
+                                "src": "3101:12:7"
+                              }
+                            ],
+                            "id": 3047,
+                            "name": "IndexAccess",
+                            "src": "3086:28:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3013,
+                              "type": "bytes32",
+                              "value": "_hash"
+                            },
+                            "id": 3048,
+                            "name": "Identifier",
+                            "src": "3117:5:7"
+                          }
+                        ],
+                        "id": 3049,
+                        "name": "Assignment",
+                        "src": "3086:36:7"
+                      }
+                    ],
+                    "id": 3050,
+                    "name": "ExpressionStatement",
+                    "src": "3086:36:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "nextIdx",
+                              "referencedDeclaration": 3006,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3011,
+                                  "type": "struct Lib.HashMappping storage pointer",
+                                  "value": "self"
+                                },
+                                "id": 3051,
+                                "name": "Identifier",
+                                "src": "3132:4:7"
+                              }
+                            ],
+                            "id": 3053,
+                            "name": "MemberAccess",
+                            "src": "3132:12:7"
+                          }
+                        ],
+                        "id": 3054,
+                        "name": "UnaryOperation",
+                        "src": "3132:14:7"
+                      }
+                    ],
+                    "id": 3055,
+                    "name": "ExpressionStatement",
+                    "src": "3132:14:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "count",
+                              "referencedDeclaration": 3008,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3011,
+                                  "type": "struct Lib.HashMappping storage pointer",
+                                  "value": "self"
+                                },
+                                "id": 3056,
+                                "name": "Identifier",
+                                "src": "3156:4:7"
+                              }
+                            ],
+                            "id": 3058,
+                            "name": "MemberAccess",
+                            "src": "3156:10:7"
+                          }
+                        ],
+                        "id": 3059,
+                        "name": "UnaryOperation",
+                        "src": "3156:12:7"
+                      }
+                    ],
+                    "id": 3060,
+                    "name": "ExpressionStatement",
+                    "src": "3156:12:7"
+                  }
+                ],
+                "id": 3061,
+                "name": "Block",
+                "src": "2752:423:7"
+              }
+            ],
+            "id": 3062,
+            "name": "FunctionDefinition",
+            "src": "2690:485:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "archive",
+              "payable": false,
+              "scope": 3201,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "self",
+                      "scope": 3134,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct Lib.HashMappping storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "HashMappping",
+                          "referencedDeclaration": 3009,
+                          "type": "struct Lib.HashMappping storage pointer"
+                        },
+                        "id": 3063,
+                        "name": "UserDefinedTypeName",
+                        "src": "3404:12:7"
+                      }
+                    ],
+                    "id": 3064,
+                    "name": "VariableDeclaration",
+                    "src": "3404:25:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_hash",
+                      "scope": 3134,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3065,
+                        "name": "ElementaryTypeName",
+                        "src": "3431:7:7"
+                      }
+                    ],
+                    "id": 3066,
+                    "name": "VariableDeclaration",
+                    "src": "3431:13:7"
+                  }
+                ],
+                "id": 3067,
+                "name": "ParameterList",
+                "src": "3403:42:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3068,
+                "name": "ParameterList",
+                "src": "3453:0:7"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7413,
+                              "type": "function (bool) pure",
+                              "value": "assert"
+                            },
+                            "id": 3069,
+                            "name": "Identifier",
+                            "src": "3505:6:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "hashActive",
+                                      "referencedDeclaration": 2994,
+                                      "type": "mapping(bytes32 => bool)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3064,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3070,
+                                        "name": "Identifier",
+                                        "src": "3512:4:7"
+                                      }
+                                    ],
+                                    "id": 3071,
+                                    "name": "MemberAccess",
+                                    "src": "3512:15:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3066,
+                                      "type": "bytes32",
+                                      "value": "_hash"
+                                    },
+                                    "id": 3072,
+                                    "name": "Identifier",
+                                    "src": "3528:5:7"
+                                  }
+                                ],
+                                "id": 3073,
+                                "name": "IndexAccess",
+                                "src": "3512:22:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "74727565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "true"
+                                },
+                                "id": 3074,
+                                "name": "Literal",
+                                "src": "3538:4:7"
+                              }
+                            ],
+                            "id": 3075,
+                            "name": "BinaryOperation",
+                            "src": "3512:30:7"
+                          }
+                        ],
+                        "id": 3076,
+                        "name": "FunctionCall",
+                        "src": "3505:38:7"
+                      }
+                    ],
+                    "id": 3077,
+                    "name": "ExpressionStatement",
+                    "src": "3505:38:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "hashActive",
+                                  "referencedDeclaration": 2994,
+                                  "type": "mapping(bytes32 => bool)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3064,
+                                      "type": "struct Lib.HashMappping storage pointer",
+                                      "value": "self"
+                                    },
+                                    "id": 3078,
+                                    "name": "Identifier",
+                                    "src": "3601:4:7"
+                                  }
+                                ],
+                                "id": 3081,
+                                "name": "MemberAccess",
+                                "src": "3601:15:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3066,
+                                  "type": "bytes32",
+                                  "value": "_hash"
+                                },
+                                "id": 3080,
+                                "name": "Identifier",
+                                "src": "3617:5:7"
+                              }
+                            ],
+                            "id": 3082,
+                            "name": "IndexAccess",
+                            "src": "3601:22:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "66616c7365",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "false"
+                            },
+                            "id": 3083,
+                            "name": "Literal",
+                            "src": "3626:5:7"
+                          }
+                        ],
+                        "id": 3084,
+                        "name": "Assignment",
+                        "src": "3601:30:7"
+                      }
+                    ],
+                    "id": 3085,
+                    "name": "ExpressionStatement",
+                    "src": "3601:30:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "hashArchive",
+                                  "referencedDeclaration": 2998,
+                                  "type": "mapping(bytes32 => bool)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3064,
+                                      "type": "struct Lib.HashMappping storage pointer",
+                                      "value": "self"
+                                    },
+                                    "id": 3086,
+                                    "name": "Identifier",
+                                    "src": "3680:4:7"
+                                  }
+                                ],
+                                "id": 3089,
+                                "name": "MemberAccess",
+                                "src": "3680:16:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3066,
+                                  "type": "bytes32",
+                                  "value": "_hash"
+                                },
+                                "id": 3088,
+                                "name": "Identifier",
+                                "src": "3697:5:7"
+                              }
+                            ],
+                            "id": 3090,
+                            "name": "IndexAccess",
+                            "src": "3680:23:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 3091,
+                            "name": "Literal",
+                            "src": "3706:4:7"
+                          }
+                        ],
+                        "id": 3092,
+                        "name": "Assignment",
+                        "src": "3680:30:7"
+                      }
+                    ],
+                    "id": 3093,
+                    "name": "ExpressionStatement",
+                    "src": "3680:30:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "--",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "count",
+                              "referencedDeclaration": 3008,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3064,
+                                  "type": "struct Lib.HashMappping storage pointer",
+                                  "value": "self"
+                                },
+                                "id": 3094,
+                                "name": "Identifier",
+                                "src": "3778:4:7"
+                              }
+                            ],
+                            "id": 3096,
+                            "name": "MemberAccess",
+                            "src": "3778:10:7"
+                          }
+                        ],
+                        "id": 3097,
+                        "name": "UnaryOperation",
+                        "src": "3778:12:7"
+                      }
+                    ],
+                    "id": 3098,
+                    "name": "ExpressionStatement",
+                    "src": "3778:12:7"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "hashArchive",
+                                  "referencedDeclaration": 2998,
+                                  "type": "mapping(bytes32 => bool)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3064,
+                                      "type": "struct Lib.HashMappping storage pointer",
+                                      "value": "self"
+                                    },
+                                    "id": 3099,
+                                    "name": "Identifier",
+                                    "src": "3883:4:7"
+                                  }
+                                ],
+                                "id": 3100,
+                                "name": "MemberAccess",
+                                "src": "3883:16:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bytes32"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "itHashMap",
+                                      "referencedDeclaration": 3002,
+                                      "type": "mapping(uint256 => bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3064,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3101,
+                                        "name": "Identifier",
+                                        "src": "3900:4:7"
+                                      }
+                                    ],
+                                    "id": 3102,
+                                    "name": "MemberAccess",
+                                    "src": "3900:14:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "firstIdx",
+                                      "referencedDeclaration": 3004,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3064,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3103,
+                                        "name": "Identifier",
+                                        "src": "3915:4:7"
+                                      }
+                                    ],
+                                    "id": 3104,
+                                    "name": "MemberAccess",
+                                    "src": "3915:13:7"
+                                  }
+                                ],
+                                "id": 3105,
+                                "name": "IndexAccess",
+                                "src": "3900:29:7"
+                              }
+                            ],
+                            "id": 3106,
+                            "name": "IndexAccess",
+                            "src": "3883:47:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 3107,
+                            "name": "Literal",
+                            "src": "3934:4:7"
+                          }
+                        ],
+                        "id": 3108,
+                        "name": "BinaryOperation",
+                        "src": "3883:55:7"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": true,
+                                      "member_name": "firstIdx",
+                                      "referencedDeclaration": 3004,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3064,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3109,
+                                        "name": "Identifier",
+                                        "src": "3954:4:7"
+                                      }
+                                    ],
+                                    "id": 3111,
+                                    "name": "MemberAccess",
+                                    "src": "3954:13:7"
+                                  }
+                                ],
+                                "id": 3112,
+                                "name": "UnaryOperation",
+                                "src": "3954:15:7"
+                              }
+                            ],
+                            "id": 3113,
+                            "name": "ExpressionStatement",
+                            "src": "3954:15:7"
+                          }
+                        ],
+                        "id": 3114,
+                        "name": "Block",
+                        "src": "3940:40:7"
+                      }
+                    ],
+                    "id": 3115,
+                    "name": "IfStatement",
+                    "src": "3879:101:7"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "hashArchive",
+                                  "referencedDeclaration": 2998,
+                                  "type": "mapping(bytes32 => bool)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3064,
+                                      "type": "struct Lib.HashMappping storage pointer",
+                                      "value": "self"
+                                    },
+                                    "id": 3116,
+                                    "name": "Identifier",
+                                    "src": "4168:4:7"
+                                  }
+                                ],
+                                "id": 3117,
+                                "name": "MemberAccess",
+                                "src": "4168:16:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bytes32"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "itHashMap",
+                                      "referencedDeclaration": 3002,
+                                      "type": "mapping(uint256 => bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3064,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3118,
+                                        "name": "Identifier",
+                                        "src": "4185:4:7"
+                                      }
+                                    ],
+                                    "id": 3119,
+                                    "name": "MemberAccess",
+                                    "src": "4185:14:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "firstIdx",
+                                      "referencedDeclaration": 3004,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3064,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3120,
+                                        "name": "Identifier",
+                                        "src": "4200:4:7"
+                                      }
+                                    ],
+                                    "id": 3121,
+                                    "name": "MemberAccess",
+                                    "src": "4200:13:7"
+                                  }
+                                ],
+                                "id": 3122,
+                                "name": "IndexAccess",
+                                "src": "4185:29:7"
+                              }
+                            ],
+                            "id": 3123,
+                            "name": "IndexAccess",
+                            "src": "4168:47:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 3124,
+                            "name": "Literal",
+                            "src": "4219:4:7"
+                          }
+                        ],
+                        "id": 3125,
+                        "name": "BinaryOperation",
+                        "src": "4168:55:7"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "++",
+                                  "prefix": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": true,
+                                      "member_name": "firstIdx",
+                                      "referencedDeclaration": 3004,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3064,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3126,
+                                        "name": "Identifier",
+                                        "src": "4239:4:7"
+                                      }
+                                    ],
+                                    "id": 3128,
+                                    "name": "MemberAccess",
+                                    "src": "4239:13:7"
+                                  }
+                                ],
+                                "id": 3129,
+                                "name": "UnaryOperation",
+                                "src": "4239:15:7"
+                              }
+                            ],
+                            "id": 3130,
+                            "name": "ExpressionStatement",
+                            "src": "4239:15:7"
+                          }
+                        ],
+                        "id": 3131,
+                        "name": "Block",
+                        "src": "4225:40:7"
+                      }
+                    ],
+                    "id": 3132,
+                    "name": "IfStatement",
+                    "src": "4164:101:7"
+                  }
+                ],
+                "id": 3133,
+                "name": "Block",
+                "src": "3453:818:7"
+              }
+            ],
+            "id": 3134,
+            "name": "FunctionDefinition",
+            "src": "3387:884:7"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "isActive",
+              "payable": false,
+              "scope": 3201,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "self",
+                      "scope": 3149,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct Lib.HashMappping storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "HashMappping",
+                          "referencedDeclaration": 3009,
+                          "type": "struct Lib.HashMappping storage pointer"
+                        },
+                        "id": 3135,
+                        "name": "UserDefinedTypeName",
+                        "src": "4570:12:7"
+                      }
+                    ],
+                    "id": 3136,
+                    "name": "VariableDeclaration",
+                    "src": "4570:25:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_hash",
+                      "scope": 3149,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3137,
+                        "name": "ElementaryTypeName",
+                        "src": "4597:7:7"
+                      }
+                    ],
+                    "id": 3138,
+                    "name": "VariableDeclaration",
+                    "src": "4597:13:7"
+                  }
+                ],
+                "id": 3139,
+                "name": "ParameterList",
+                "src": "4569:42:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 3149,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 3140,
+                        "name": "ElementaryTypeName",
+                        "src": "4637:4:7"
+                      }
+                    ],
+                    "id": 3141,
+                    "name": "VariableDeclaration",
+                    "src": "4637:4:7"
+                  }
+                ],
+                "id": 3142,
+                "name": "ParameterList",
+                "src": "4636:6:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 3142
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "hashActive",
+                              "referencedDeclaration": 2994,
+                              "type": "mapping(bytes32 => bool)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3136,
+                                  "type": "struct Lib.HashMappping storage pointer",
+                                  "value": "self"
+                                },
+                                "id": 3143,
+                                "name": "Identifier",
+                                "src": "4660:4:7"
+                              }
+                            ],
+                            "id": 3144,
+                            "name": "MemberAccess",
+                            "src": "4660:15:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3138,
+                              "type": "bytes32",
+                              "value": "_hash"
+                            },
+                            "id": 3145,
+                            "name": "Identifier",
+                            "src": "4676:5:7"
+                          }
+                        ],
+                        "id": 3146,
+                        "name": "IndexAccess",
+                        "src": "4660:22:7"
+                      }
+                    ],
+                    "id": 3147,
+                    "name": "Return",
+                    "src": "4653:29:7"
+                  }
+                ],
+                "id": 3148,
+                "name": "Block",
+                "src": "4643:46:7"
+              }
+            ],
+            "id": 3149,
+            "name": "FunctionDefinition",
+            "src": "4552:137:7"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "isArchived",
+              "payable": false,
+              "scope": 3201,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "self",
+                      "scope": 3164,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct Lib.HashMappping storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "HashMappping",
+                          "referencedDeclaration": 3009,
+                          "type": "struct Lib.HashMappping storage pointer"
+                        },
+                        "id": 3150,
+                        "name": "UserDefinedTypeName",
+                        "src": "4985:12:7"
+                      }
+                    ],
+                    "id": 3151,
+                    "name": "VariableDeclaration",
+                    "src": "4985:25:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_hash",
+                      "scope": 3164,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3152,
+                        "name": "ElementaryTypeName",
+                        "src": "5012:7:7"
+                      }
+                    ],
+                    "id": 3153,
+                    "name": "VariableDeclaration",
+                    "src": "5012:13:7"
+                  }
+                ],
+                "id": 3154,
+                "name": "ParameterList",
+                "src": "4984:42:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 3164,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 3155,
+                        "name": "ElementaryTypeName",
+                        "src": "5052:4:7"
+                      }
+                    ],
+                    "id": 3156,
+                    "name": "VariableDeclaration",
+                    "src": "5052:4:7"
+                  }
+                ],
+                "id": 3157,
+                "name": "ParameterList",
+                "src": "5051:6:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 3157
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "hashArchive",
+                              "referencedDeclaration": 2998,
+                              "type": "mapping(bytes32 => bool)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3151,
+                                  "type": "struct Lib.HashMappping storage pointer",
+                                  "value": "self"
+                                },
+                                "id": 3158,
+                                "name": "Identifier",
+                                "src": "5075:4:7"
+                              }
+                            ],
+                            "id": 3159,
+                            "name": "MemberAccess",
+                            "src": "5075:16:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3153,
+                              "type": "bytes32",
+                              "value": "_hash"
+                            },
+                            "id": 3160,
+                            "name": "Identifier",
+                            "src": "5092:5:7"
+                          }
+                        ],
+                        "id": 3161,
+                        "name": "IndexAccess",
+                        "src": "5075:23:7"
+                      }
+                    ],
+                    "id": 3162,
+                    "name": "Return",
+                    "src": "5068:30:7"
+                  }
+                ],
+                "id": 3163,
+                "name": "Block",
+                "src": "5058:47:7"
+              }
+            ],
+            "id": 3164,
+            "name": "FunctionDefinition",
+            "src": "4965:140:7"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "isValid",
+              "payable": false,
+              "scope": 3201,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "self",
+                      "scope": 3185,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct Lib.HashMappping storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "HashMappping",
+                          "referencedDeclaration": 3009,
+                          "type": "struct Lib.HashMappping storage pointer"
+                        },
+                        "id": 3165,
+                        "name": "UserDefinedTypeName",
+                        "src": "5428:12:7"
+                      }
+                    ],
+                    "id": 3166,
+                    "name": "VariableDeclaration",
+                    "src": "5428:25:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_hash",
+                      "scope": 3185,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3167,
+                        "name": "ElementaryTypeName",
+                        "src": "5455:7:7"
+                      }
+                    ],
+                    "id": 3168,
+                    "name": "VariableDeclaration",
+                    "src": "5455:13:7"
+                  }
+                ],
+                "id": 3169,
+                "name": "ParameterList",
+                "src": "5427:42:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 3185,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 3170,
+                        "name": "ElementaryTypeName",
+                        "src": "5495:4:7"
+                      }
+                    ],
+                    "id": 3171,
+                    "name": "VariableDeclaration",
+                    "src": "5495:4:7"
+                  }
+                ],
+                "id": 3172,
+                "name": "ParameterList",
+                "src": "5494:6:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 3172
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "||",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "hashActive",
+                                      "referencedDeclaration": 2994,
+                                      "type": "mapping(bytes32 => bool)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3166,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3173,
+                                        "name": "Identifier",
+                                        "src": "5519:4:7"
+                                      }
+                                    ],
+                                    "id": 3174,
+                                    "name": "MemberAccess",
+                                    "src": "5519:15:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3168,
+                                      "type": "bytes32",
+                                      "value": "_hash"
+                                    },
+                                    "id": 3175,
+                                    "name": "Identifier",
+                                    "src": "5535:5:7"
+                                  }
+                                ],
+                                "id": 3176,
+                                "name": "IndexAccess",
+                                "src": "5519:22:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "hashArchive",
+                                      "referencedDeclaration": 2998,
+                                      "type": "mapping(bytes32 => bool)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 3166,
+                                          "type": "struct Lib.HashMappping storage pointer",
+                                          "value": "self"
+                                        },
+                                        "id": 3177,
+                                        "name": "Identifier",
+                                        "src": "5545:4:7"
+                                      }
+                                    ],
+                                    "id": 3178,
+                                    "name": "MemberAccess",
+                                    "src": "5545:16:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3168,
+                                      "type": "bytes32",
+                                      "value": "_hash"
+                                    },
+                                    "id": 3179,
+                                    "name": "Identifier",
+                                    "src": "5562:5:7"
+                                  }
+                                ],
+                                "id": 3180,
+                                "name": "IndexAccess",
+                                "src": "5545:23:7"
+                              }
+                            ],
+                            "id": 3181,
+                            "name": "BinaryOperation",
+                            "src": "5519:49:7"
+                          }
+                        ],
+                        "id": 3182,
+                        "name": "TupleExpression",
+                        "src": "5518:51:7"
+                      }
+                    ],
+                    "id": 3183,
+                    "name": "Return",
+                    "src": "5511:58:7"
+                  }
+                ],
+                "id": 3184,
+                "name": "Block",
+                "src": "5501:75:7"
+              }
+            ],
+            "id": 3185,
+            "name": "FunctionDefinition",
+            "src": "5411:165:7"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "get",
+              "payable": false,
+              "scope": 3201,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "self",
+                      "scope": 3200,
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "type": "struct Lib.HashMappping storage pointer",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "HashMappping",
+                          "referencedDeclaration": 3009,
+                          "type": "struct Lib.HashMappping storage pointer"
+                        },
+                        "id": 3186,
+                        "name": "UserDefinedTypeName",
+                        "src": "5871:12:7"
+                      }
+                    ],
+                    "id": 3187,
+                    "name": "VariableDeclaration",
+                    "src": "5871:25:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_idx",
+                      "scope": 3200,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 3188,
+                        "name": "ElementaryTypeName",
+                        "src": "5898:4:7"
+                      }
+                    ],
+                    "id": 3189,
+                    "name": "VariableDeclaration",
+                    "src": "5898:9:7"
+                  }
+                ],
+                "id": 3190,
+                "name": "ParameterList",
+                "src": "5870:38:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 3200,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 3191,
+                        "name": "ElementaryTypeName",
+                        "src": "5934:7:7"
+                      }
+                    ],
+                    "id": 3192,
+                    "name": "VariableDeclaration",
+                    "src": "5934:7:7"
+                  }
+                ],
+                "id": 3193,
+                "name": "ParameterList",
+                "src": "5933:9:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 3193
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "bytes32"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "itHashMap",
+                              "referencedDeclaration": 3002,
+                              "type": "mapping(uint256 => bytes32)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3187,
+                                  "type": "struct Lib.HashMappping storage pointer",
+                                  "value": "self"
+                                },
+                                "id": 3194,
+                                "name": "Identifier",
+                                "src": "5960:4:7"
+                              }
+                            ],
+                            "id": 3195,
+                            "name": "MemberAccess",
+                            "src": "5960:14:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3189,
+                              "type": "uint256",
+                              "value": "_idx"
+                            },
+                            "id": 3196,
+                            "name": "Identifier",
+                            "src": "5975:4:7"
+                          }
+                        ],
+                        "id": 3197,
+                        "name": "IndexAccess",
+                        "src": "5960:20:7"
+                      }
+                    ],
+                    "id": 3198,
+                    "name": "Return",
+                    "src": "5953:27:7"
+                  }
+                ],
+                "id": 3199,
+                "name": "Block",
+                "src": "5943:44:7"
+              }
+            ],
+            "id": 3200,
+            "name": "FunctionDefinition",
+            "src": "5858:129:7"
+          }
+        ],
+        "id": 3201,
+        "name": "ContractDefinition",
+        "src": "232:5757:7"
+      }
+    ],
+    "id": 3202,
+    "name": "SourceUnit",
+    "src": "133:5856:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "4447": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    },
+    "1516071917444": {
+      "events": {},
+      "links": {},
+      "address": "0xf52e83c64633c37ab7a179a01f35311b41c1a194"
+    },
+    "1516076668109": {
+      "events": {},
+      "links": {},
+      "address": "0x5a9bea9066bd956309dffcfc5f1fe6823a15cd45"
+    },
+    "1516406798592": {
+      "events": {},
+      "links": {},
+      "address": "0xd3dca09fff5b7dec654240d1b0463e6aeb40efa9"
+    },
+    "1516410167997": {
+      "events": {},
+      "links": {},
+      "address": "0x99816ffa3631db3838e950fb0320e5927146763c"
+    },
+    "1516439324684": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    },
+    "1517183003316": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    },
+    "1517183152074": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-30T23:40:31.907Z"
+}

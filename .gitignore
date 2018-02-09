@@ -1,0 +1,8 @@
+ApiService/bin/*
+ApiService/obj/*
+ApiService/config/*
+!ApiService/config/config.json
+ApiService.ServiceInterface/bin/*
+ApiService.ServiceInterface/obj/*
+ApiService.ServiceModel/bin/*
+ApiService.ServiceModel/obj/*
